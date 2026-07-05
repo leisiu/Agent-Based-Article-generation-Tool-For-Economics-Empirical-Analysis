@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.venv/
+venv/
+
+# Build outputs (Python)
+backend/dist/
+
+# Frontend dist is committed for zero-Node.js setup
+# frontend/dist/
+
+# Database
+*.db
+*.db-wal
+*.db-shm
+
+# Uploads & Exports (user data)
+backend/uploads/
+backend/exports/
+
+# Config with sensitive keys
+backend/settings.json
+
+# Logs
+*.log
+logs/
+
+# Node.js
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Build outputs
+*.js.map
