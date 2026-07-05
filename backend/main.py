@@ -43,6 +43,7 @@ db = Database()
 logger = logging.getLogger(__name__)
 
 class EmpiricalRequest(BaseModel):
+    model_config = {"protected_namespaces": ()}
     command: Optional[str] = None
     model_type: str = "deepseek"
     api_key: Optional[str] = None
@@ -598,6 +599,7 @@ async def process_rerun_empirical_task(project_id: str, command: str, model_type
 
 
 class GeneratePaperRequest(BaseModel):
+    model_config = {"protected_namespaces": ()}
     project_id: str
     model_type: str = "deepseek"
     api_key: Optional[str] = None
@@ -1386,4 +1388,4 @@ if os.path.exists(FRONTEND_DIST):
         return AIResponse(success=False, message="前端资源未构建，请运行 cd frontend && npm run build")
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8001, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8002, reload=True)

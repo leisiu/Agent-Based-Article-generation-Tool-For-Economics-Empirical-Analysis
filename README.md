@@ -48,13 +48,15 @@ pip install -r requirements.txt
 ```
 bash
 cd backend
-python -m uvicorn main:app --host 0.0.0.0 --port 8001
+python -m uvicorn main:app --host 0.0.0.0 --port 8002
+python main.py
+> 启动后访问 http://localhost:8002
 ```
 
 ### 3. 访问
 
-- **前端页面**：http://localhost:8001
-- **API 文档**：http://localhost:8001/docs
+- **前端页面**：http://localhost:8002
+- **API 文档**：http://localhost:8002/docs
 ---
 
 ## 项目结构
