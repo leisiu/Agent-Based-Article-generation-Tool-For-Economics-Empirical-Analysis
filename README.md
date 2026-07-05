@@ -92,7 +92,6 @@ python main.py
 │   │   ├── api/                # API 封装
 │   │   └── store/              # 状态管理
 │   └── dist/                   # 构建产物
-├── start.ps1                   # Windows 一键启动
 └── README.md
 ```
 
