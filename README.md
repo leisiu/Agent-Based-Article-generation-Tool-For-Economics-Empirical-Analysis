@@ -28,8 +28,7 @@ pyfixest、statsmodels库等完成与stata相同的计量分析
 用户确定实证结果---→数据分析agent---→文献综述agent---→学术写作agent---→质量评审agent---→审稿agent---→输出论文
 
 每个智能体调用 LLM，前一个智能体的输出作为上下文传递给下一个。
-
----
+```
 
 ## 部署与启动
 
@@ -38,14 +37,16 @@ pyfixest、statsmodels库等完成与stata相同的计量分析
 
 ### 1. 安装依赖
 
-```bash
+```
+bash
 cd backend
 pip install -r requirements.txt
 ```
 
 ### 2. 启动服务
 
-```bash
+```
+bash
 cd backend
 python -m uvicorn main:app --host 0.0.0.0 --port 8001
 ```
